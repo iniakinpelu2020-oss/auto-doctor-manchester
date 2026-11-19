@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39424f"/>
+      <stop offset="0.42" stop-color="#232a34"/>
+      <stop offset="1" stop-color="#10151b"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2836"/>
+      <stop offset="1" stop-color="#0a0f15"/>
+    </linearGradient>
+    <linearGradient id="lamp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="ground" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#f59e0b" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ground glow + shadow -->
+  <ellipse cx="500" cy="452" rx="400" ry="78" fill="url(#ground)"/>
+  <ellipse cx="500" cy="438" rx="322" ry="34" fill="#05070a" opacity="0.85"/>
+
+  <g>
+    <!-- shoulder / rim light sweep -->
+    <path d="M168 330 C 300 296 470 286 700 322" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- main body -->
+    <path d="M120 392
+             C 110 372 110 350 126 337
+             L 208 317
+             C 252 299 292 286 342 272
+             C 382 258 412 251 454 249
+             L 522 247
+             C 578 252 622 266 662 289
+             L 764 321
+             C 830 337 872 357 884 380
+             L 890 400
+             L 800 400
+             A 66 66 0 0 0 660 400
+             L 350 400
+             A 66 66 0 0 0 210 400
+             L 142 400
+             C 126 400 122 398 120 392 Z"
+          fill="url(#body)" stroke="#3f4a59" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- lower sill / splitter -->
+    <path d="M150 398 L 880 398" stroke="#f59e0b" stroke-width="2" opacity="0.35"/>
+    <path d="M120 392 L 210 392" stroke="#0a0d12" stroke-width="6" opacity="0.8"/>
+
+    <!-- cabin glass -->
+    <path d="M372 291 Q 420 264 476 257 L 534 257 Q 582 266 614 288 Q 500 302 372 291 Z"
+          fill="url(#glass)" stroke="#485668" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- roof highlight -->
+    <path d="M470 254 Q 512 251 540 254" stroke="#93a2b6" stroke-width="2" opacity="0.55" fill="none" stroke-linecap="round"/>
+
+    <!-- door line + handle -->
+    <path d="M462 296 L 470 388" stroke="#0c1117" stroke-width="2" opacity="0.9"/>
+    <path d="M520 318 L 552 320" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+
+    <!-- headlight -->
+    <path d="M132 344 q 26 -8 46 -3 l -5 14 q -24 3 -41 -4 Z" fill="url(#lamp)" opacity="0.95"/>
+    <path d="M126 337 q 30 -10 54 -4" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- tail light -->
+    <path d="M864 352 l 20 5 l -3 14 l -20 -5 Z" fill="#ff6b4a" opacity="0.9"/>
+
+    <!-- side vent -->
+    <path d="M700 330 l 44 10 l -4 12 l -44 -10 Z" fill="#0b0f14" stroke="#4c5a6c" stroke-width="1.5"/>
+
+    <!-- wheel arch accents -->
+    <path d="M352 400 A 66 66 0 0 0 210 400" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.28"/>
+    <path d="M800 400 A 66 66 0 0 0 660 400" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.28"/>
+
+    <!-- wheels -->
+    <g>
+      <circle cx="281" cy="400" r="63" fill="#0a0e13" stroke="#2b333f" stroke-width="3"/>
+      <circle cx="281" cy="400" r="34" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.6"/>
+      <circle cx="281" cy="400" r="21" fill="none" stroke="#3d4857" stroke-width="2"/>
+      <circle cx="281" cy="400" r="6" fill="#f59e0b" opacity="0.9"/>
+      <g stroke="#556273" stroke-width="2" opacity="0.8">
+        <path d="M281 366 L 281 390"/>
+        <path d="M281 410 L 281 434"/>
+        <path d="M247 400 L 271 400"/>
+        <path d="M291 400 L 315 400"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="730" cy="400" r="63" fill="#0a0e13" stroke="#2b333f" stroke-width="3"/>
+      <circle cx="730" cy="400" r="34" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.6"/>
+      <circle cx="730" cy="400" r="21" fill="none" stroke="#3d4857" stroke-width="2"/>
+      <circle cx="730" cy="400" r="6" fill="#f59e0b" opacity="0.9"/>
+      <g stroke="#556273" stroke-width="2" opacity="0.8">
+        <path d="M730 366 L 730 390"/>
+        <path d="M730 410 L 730 434"/>
+        <path d="M696 400 L 720 400"/>
+        <path d="M740 400 L 764 400"/>
+      </g>
+    </g>
+
+    <!-- body specular highlight -->
+    <path d="M196 334 C 268 318 340 304 404 296" stroke="#aab6c6" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+  </g>
+
+  <!-- scanline accents -->
+  <g stroke="#f59e0b" opacity="0.35" stroke-dasharray="6 10">
+    <path d="M120 236 L 300 236"/>
+    <path d="M700 206 L 880 206"/>
+  </g>
+</svg>
