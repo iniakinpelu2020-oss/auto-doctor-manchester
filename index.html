@@ -46,34 +46,53 @@
 
 <main id="main">
   <section class="hero" id="top">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Sharston · Wythenshawe · South Manchester</p>
-        <h1 class="reveal" style="--d:1">Trusted car repair &amp; servicing, <span class="hl">rated 5.0 stars</span> by Manchester drivers.</h1>
-        <p class="hero-sub reveal" style="--d:2">
-          Diagnostics, servicing, brakes and clutch work carried out properly the first time — by a local garage with
-          <strong>158 five-star reviews</strong> and no upselling.
-        </p>
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Sharston · Wythenshawe · South Manchester</p>
+      <h1 class="reveal" style="--d:1">Trusted car repair &amp; servicing, <span class="hl">rated 5.0 stars</span> by Manchester drivers.</h1>
 
-        <div class="hero-cta reveal" style="--d:3">
-          <a class="btn btn-accent" href="tel:+447446906192">
-            <svg class="ico" aria-hidden="true"><use href="assets/img/icons.svg#i-phone" /></svg>
-            Book a Repair / Call Now
-          </a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=124%20Longley%20Ln%2C%20Sharston%2C%20Wythenshawe%2C%20Manchester%20M22%204SY" target="_blank" rel="noopener">
-            <svg class="ico" aria-hidden="true"><use href="assets/img/icons.svg#i-pin" /></svg>
-            Get Directions
-          </a>
+      <div class="hero-stage reveal" id="heroStage" style="--d:2">
+        <div class="stage-wordmark" aria-hidden="true">Auto Doctor</div>
+        <div class="stage-spot" aria-hidden="true"></div>
+        <div class="stage-3d">
+          <div class="layer layer-hud" aria-hidden="true">
+            <span class="hud-ring"></span>
+            <span class="hud-ring hud-ring--2"></span>
+            <span class="hud-axis"></span>
+          </div>
+          <div class="layer layer-car">
+            <img src="assets/img/car.svg" alt="Stylised sports car shown with a live automotive diagnostic overlay" width="1000" height="560" />
+          </div>
+          <div class="layer layer-chips" aria-hidden="true">
+            <span class="hud-chip hud-chip--a">OBD-II · Live</span>
+            <span class="hud-chip hud-chip--b">0 faults stored</span>
+            <span class="hud-chip hud-chip--c">Diagnostics · Servicing · MOT</span>
+          </div>
         </div>
-
-        <ul class="hero-points reveal" style="--d:4">
-          <li>Same-week bookings</li>
-          <li>All makes &amp; models</li>
-          <li>Honest, itemised quotes</li>
-        </ul>
       </div>
 
-      <div class="hero-panel reveal" style="--d:2">
+      <p class="hero-sub reveal" style="--d:3">
+        Diagnostics, servicing, brakes and clutch work carried out properly the first time — by a local garage with
+        <strong>158 five-star reviews</strong> and no upselling.
+      </p>
+
+      <div class="hero-cta reveal" style="--d:3">
+        <a class="btn btn-accent" href="tel:+447446906192">
+          <svg class="ico" aria-hidden="true"><use href="assets/img/icons.svg#i-phone" /></svg>
+          Book a Repair / Call Now
+        </a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=124%20Longley%20Ln%2C%20Sharston%2C%20Wythenshawe%2C%20Manchester%20M22%204SY" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="assets/img/icons.svg#i-pin" /></svg>
+          Get Directions
+        </a>
+      </div>
+
+      <ul class="hero-points reveal" style="--d:4">
+        <li>Same-week bookings</li>
+        <li>All makes &amp; models</li>
+        <li>Honest, itemised quotes</li>
+      </ul>
+
+      <div class="hero-panel reveal" style="--d:4">
         <div class="hero-visual">
           <p class="visual-eyebrow">Rated by Manchester drivers</p>
           <div class="visual-score">
@@ -88,7 +107,6 @@
           <ul class="visual-points">
             <li><svg class="tick" aria-hidden="true"><use href="assets/img/icons.svg#i-tick" /></svg> Same-week booking slots</li>
             <li><svg class="tick" aria-hidden="true"><use href="assets/img/icons.svg#i-tick" /></svg> Work quoted before it starts</li>
-            <li><svg class="tick" aria-hidden="true"><use href="assets/img/icons.svg#i-tick" /></svg> All makes &amp; models</li>
           </ul>
         </div>
         <div class="hero-card">
@@ -98,6 +116,9 @@
             <div><dt>Saturday</dt><dd>9:00 AM – 4:00 PM</dd></div>
             <div><dt>Sunday</dt><dd class="closed">Closed</dd></div>
           </dl>
+        </div>
+        <div class="hero-contact">
+          <p class="hero-card-label">Call the garage</p>
           <a class="hero-card-phone" href="tel:+447446906192">+44 7446 906192</a>
           <p class="hero-card-addr">124 Longley Ln, Sharston, Wythenshawe, Manchester M22 4SY</p>
         </div>
@@ -365,5 +386,6 @@
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/hero-3d.js" defer></script>
 </body>
 </html>
